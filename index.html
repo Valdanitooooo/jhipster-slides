@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JHipster 介绍</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#3E8ACC">
+					<h2>JHipster介绍幻灯片</h2>
+					<img src="images/logo.png" class="jhipster-logo" style="border:none;box-shadow:none"/>
+					<p>
+						按右箭头继续 &gt;
+					</p>
+				</section>
+				
+				<section data-background="#4d7e65" data-background-transition="slide">
+					<h1>关于这个幻灯片</h1>
+					<ul>
+						<li>点击左/右箭头浏览到主要部分</li>
+						<li>点击上/下箭头以查看每个部分中的幻灯片</li>
+						<li>点击"escape"键查看所有幻灯片</li>
+					</ul>
+				</section>
+				
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>JHipster 是什么?</h1>
+						<h3>Java Hipster</h3>
+					</section>
+					<section>
+						<p>JHipster是一个免费的开源应用程序生成器，用于使用Angular或React（JavaScript库）和Spring Framework快速开发现代Web应用程序和微服务。</p>
+					</section>
+					<section>
+						<h3><i>JHipster吸引我们的地方</i></h3>
+						<hr/>
+						<ul>
+							<li>开箱即用</li>
+							<li>集成了最新的前后端框架</li>
+							<li>方便持续集成</li>
+							<li>社区活跃</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>前端技术栈</h1>
+						<h3>Yeoman, Webpack, Angular, React, Bootstrap</h3>
+					</section>
+					<section>
+						<h1></h1>
+						<h3>NPM</h3>
+						<ul>
+							<li>快速可靠的依赖管理</li>
+							<li>用于安装和运行所有客户端工具</li>
+						</ul>
+						<pre>
+							<code data-trim contenteditable>npm install -g generator-jhipster</code>
+						</pre>
+					</section>
+
+					<section>
+						<h1>Yeoman</h1>
+						<h3>提供应用程序<i>生成器</i></h3>
+						Yeoman工作流包括三种类型的工具
+						<ul>
+							<li>脚手架工具（yo）</li>
+							<li>构建工具（Gulp，Grunt等）</li>
+							<li>包管理器（如npm和Bower）</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Webpack</h1>
+						<h3>模块打包机</h3>
+						<ul>
+							<li>编译、缩小、优化前端</li>
+							<li>编译和热重新中加载angular/react+typescript的基本工具</li>
+							<li>允许在客户端进行高效的生产构建</li>
+						</ul>
+					</section>
+					<section>
+						<h1>BrowserSync</h1>
+						<h3>应用程序更改的热重加载</h3>
+						<ul>
+							<li>修改代码时自动刷新浏览器</li>
+							<li>实时同步多个浏览器，因此可以立即检查更改</li>
+						</ul>
+						<pre>
+							<code data-trim contenteditable>npm start</code>
+						</pre>
+					</section>
+					<section>
+						<h1>Jest</h1>
+						<h3>对javascript代码运行单元测试</h3>
+						<ul>
+							<li>与<i>jsdom</i>（一种虚拟dom技术）一起工作</li>
+							<li>非常快，可以在后台连续运行v</li>
+						</ul>
+						<pre>
+							<code data-trim contenteditable>npm test</code>
+						</pre>
+					</section>
+					<section>
+						<h1>Angular and React</h1>
+						<h3>最流行的javascript框架</h3>
+						<ul>
+							<li>强大且易于学习</li>
+							<li>数据绑定，表单验证，i18n…开箱即用</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Bootstrap</h1>
+						<h3>优秀的css/javascript框架，用于响应迅速的web应用程序</h3>
+						<ul>
+							<li>所有常用的css和html元素</li>
+							<li>大量的javascript组件：菜单、导航栏、下拉框、警报……</li>
+						</ul>
+						<pre>
+							<code data-trim contenteditable>
+							<div class="alert alert-success">
+								<strong>Hello, world!</strong>
+							</div>
+							</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>服务器端技术栈</h1>
+						<h3>Maven, Spring, SpringBoot, SpringCloud</h3>
+					</section>
+					<section>
+						<h1>Maven | Gradle</h1>
+						<h3>最流行的java构建工具</h3>
+						<ul>
+						<li>与主要IDE集成</li>
+						<li>丰富的插件生态系统，包括Spring Boot和Yeoman</li>
+						</ul>
+						<pre>
+				                            <code data-trim contenteditable>
+				./mvnw spring-boot:run
+				                            </code>
+				                            <code data-trim contenteditable>
+				./gradlew bootRun
+				                            </code>
+				                        </pre>
+					</section>
+					<section>
+						<h1>Spring Boot</h1>
+						<h3>Java应用程序的标准</h3>
+						<ul>
+							<li>简化应用程序编码的ioc、aop和抽象</li>
+							<li>开箱即用， 快速轻巧，功能强大</li>
+							<li>热加载应用程序</li>
+						</ul>
+						<pre>
+				                            <code data-trim contenteditable>
+				@Service
+				@Transactional
+				public class UserService {
+				
+				    @Autowired
+				    private UserRepository userRepository;
+				
+				}
+				                            </code>
+				                        </pre>
+					</section>
+					<section>
+						<h1>Liquibase</h1>
+						<h3>数据库更新变得容易</h3>
+						<ul>
+							<li>处理更新数据库架构</li>
+							<li>很适合spring和jpa</li>
+							<li>需要对数据库和orm有很好的了解</li>
+						</ul>
+					</section>
+					<section>
+						<h1>支持多种认证机制</h1>
+						<h3>JWT，Session， OAuth 2.0/OIDC </h3>
+						<ul>
+							<li>JWT - 无状态，带令牌</li>
+							<li>Session - 有状态的、默认的spring安全机制</li>
+							<li>OAuth 2.0/OIDC - 有状态，与Keycloak和Okta一起使用</li>
+						</ul>
+					</section>
+					<section>
+						<h1>支持多种数据库</h1>
+						<h3>常用关系型和非关系型数据</h3>
+						<ul>
+							<li>SQL (H2, MySQL, MariaDB, PostgreSQL, Oracle, MSSQL)</li>
+							<li>MongoDB</li>
+							<li>Cassandra</li>
+							<li>Couchbase</li>
+						</ul>
+					</section>
+					<section>
+						<h1>支持多种缓存技术</h1>
+						<h3></h3>
+						<ul>
+							<li>ehcache</li>
+							<li>Caffeine</li>
+							<li>Hazelcast</li>
+							<li>Infinispan</li>
+							<li>Memcached</li>
+						</ul>
+					</section>
+					<section>
+						<h1>监控</h1>
+						<h3>生成生产指标</h3>
+						<ul>
+							<li>监控jvm、应用服务器、spring beans、缓存等等！</li>
+							<li>JMX或Graphite报告</li>
+						</ul>
+						<pre>
+												<code data-trim contenteditable>
+													@Timed
+													public void saveAccount(@RequestBody UserDTO userDTO) {
+														userService.updateUserInformation(userDTO);
+													}
+												</code>
+											</pre>
+					</section>
+					<section>
+						<h1>其他</h1>
+						<h3></h3>
+						<ul>
+							<li>Elasticsearch</li>
+							<li>Spring Websocket</li>
+							<li>OpenAPI-generator</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>微服务的技术栈</h1>
+						<h3>Netflix OSS</h3>
+					</section>
+					<section>
+						<h1>Netflix OSS</h1>
+						<h3>Netflix OSS 为微服务提供了出色的工具和框架</h3>
+						<ul>
+							<li>使用Netflix Zuul或Traefik的 HTTP路由</li>
+							<li>使用Netflix Eureka或HashiCorp Consul进行服务发现</li>
+							<li>Ribbon - 负载平衡</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>Istio</h1>
+						<h3></h3>
+					</section>
+					<section>
+						<h1>todo</h1>
+						<h3></h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background="#4d7e65" data-background-transition="slide">
+						<h1>构建单体应用程序</h1>
+						<h3></h3>
+					</section>
+					<section>
+						<h1>安装Yeoman和generator-jhipster</h1>
+						<pre>
+				                            <code data-trim contenteditable>
+				npm install -g yo
+				npm install -g generator-jhipster
+				                            </code>
+				                        </pre>
+					</section>
+					<section>
+						<h1>创建应用程序</h1>
+						<pre>
+								<code data-trim contenteditable>
+								mkdir jhipster-learning
+								cd jhipster-learning/
+								jhipster
+								
+								</code>
+							</pre>
+					</section>
+					<section>
+						<h1>启动后端服务</h1>
+						<pre>
+							<code data-trim contenteditable>
+							./mvnw
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h1>热加载启动前端</h1>
+						<pre>
+							<code data-trim contenteditable>
+								npm start
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h1>生产环境启动方式</h1>
+						<pre>
+							<code data-trim contenteditable>
+								./mvnw -Pprod package
+								docker-compose -f src/main/docker/mysql.yml up -d
+								java -jar target/*.jar
+							</code>
+						</pre>
+				
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h1>未来</h1>
+					<ul>
+						<li>java hipster -> kotlin hipster？</li>
+						<li>node hipster?</li>
+						<li>Jhipster Registry 支持多语言微服务？</li>
+					</ul>
+					</section>
+				</section>
+				
+				<section>
+					<h1>谢谢观看</h1>
+					<p>
+						<a href="https://www.jhipster.tech">更多内容请移步Jhipster官网https://www.jhipster.tech</a>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
